@@ -1,0 +1,151 @@
+:root {
+	--color-1: #111;
+	--color-2: #222;
+	--color-3: #ddd;
+	--color-4: #fff;
+	--color-5: #555;
+	--color-6: #eee;
+	--font-family: "Courier New", Courier, monospace;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: var(--color-3);
+	font-family: var(--font-family);
+}
+.screen {
+	display: none;
+}
+.screen.active {
+	display: block;
+}
+#app {
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 88%;
+	max-width: 500px;
+	background: var(--color-4);
+	border: 3px dotted var(--color-3);
+}
+.join-screen .form {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 50px;
+}
+.join-screen .form .form-input {
+	margin: 10px 0;
+}
+.join-screen .form h2 {
+	font-size: 40px;
+	line-height: 1rem;
+	color: var(--color-2);
+	margin-bottom: 20px;
+}
+.join-screen .form button {
+	background: var(--color-1);
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 20px;
+	color: var(--color-4);
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.join-screen .form #join-id strong {
+	color: var(--color-2);
+	display: block;
+	margin-top: 20px;
+}
+.join-screen .form #join-id span {
+	display: inline-block;
+	font-size: 20px;
+	font-family: var(--font-family);
+	color: var(--color-2);
+	padding: 10px;
+	border: 2px solid var(--color-1);
+	margin-top: 5px;
+}
+/* .join-screen .form label {
+	color: var(--color-2);
+	font-size: 20px;
+} */
+.join-screen .form label {
+	color: var(--color-2);
+	display: block;
+	margin-top: 20px;
+}
+/* .join-screen .form input {
+	display: block;
+	margin: 10px 0;
+	width: 100%;
+	max-width: 200px;
+	border: 2px solid var(--color-1);
+	color: var(--color-1);
+	font-size: 20px;
+	padding: 10px;
+} */
+.join-screen .form input {
+	display: block;
+	font-size: 20px;
+	font-family: var(--font-family);
+	color: var(--color-2);
+	padding: 10px;
+	border: 2px solid var(--color-1);
+	margin-top: 5px;
+}
+.fs-screen {
+	padding: 20px;
+}
+.fs-screen .file-input {
+	width: 100%;
+	border: 2px dashed var(--color-5);
+}
+.fs-screen .file-input label {
+	display: block;
+	width: 100%;
+	padding: 40px 50px;
+	text-align: center;
+	color: var(--color-1);
+	font-size: 20px;
+}
+.fs-screen .file-input input {
+	display: none;
+}
+.fs-screen .files-list {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.fs-screen .files-list .title {
+	width: 100%;
+	font-size: 20px;
+	color: var(--color-5);
+	margin-bottom: 20px;
+}
+.fs-screen .files-list .item {
+	width: 33%;
+	min-width: 200px;
+	border: 2px solid var(--color-6);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
+}
+.fs-screen .files-list .item .progress {
+	padding: 30px;
+	text-align: center;
+	font-size: 50px;
+	font-family: var(--font-family);
+	color: var(--color-2);
+}
+.fs-screen .files-list .item .filename {
+	font-size: 20px;
+	padding: 5px;
+	border-top: 2px solid var(--color-6);
+}
