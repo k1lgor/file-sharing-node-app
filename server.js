@@ -3,7 +3,7 @@ const path = require("path");
 
 const app = express();
 const server = require("http").createServer(app);
-
+const PORT = process.env.PORT || 3000;
 const io = require("socket.io")(server);
 
 app.use(express.static(path.join(__dirname + "/public")));
@@ -27,4 +27,4 @@ io.on("connection", function (socket) {
 	});
 });
 
-server.listen(3000);
+server.listen(PORT, console.log(`http://localhost:${PORT}`));
