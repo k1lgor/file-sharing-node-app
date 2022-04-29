@@ -8,3 +8,4 @@ https://share-files-app.herokuapp.com/
 
 https://share-files-app.herokuapp.com/receiver.html
 
+![file-sharing](./file-sharing.gif)
